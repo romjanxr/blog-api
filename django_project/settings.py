@@ -37,6 +37,7 @@ LOGIN_URL = 'http://127.0.0.1:5500/login.html'
 # Application definition
 
 INSTALLED_APPS = [
+    "whitenoise.runserver_nostatic",
 
     # pre
 
@@ -97,6 +98,7 @@ REST_FRAMEWORK = {
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
