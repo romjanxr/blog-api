@@ -14,11 +14,13 @@
     "routes": [
       {
         "src": "/static/(.*)",
-        "dest": "/staticfiles/$1"
+        "dest": "/static/$1"
       },
       {
         "src": "/(.*)",
         "dest": "django_project/wsgi.py"
       }
-    ]
-}
+    ],
+    "outputDirectory": "staticfiles"
+  }
+  
