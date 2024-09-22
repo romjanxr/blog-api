@@ -20,5 +20,6 @@
         "src": "/(.*)",
         "dest": "django_project/wsgi.py"
       }
-    ]
+    ],
+    "outputDirectory": "staticfiles"
   }
