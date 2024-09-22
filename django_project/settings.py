@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-5gl8u2s=)iq9e((6h&!yd2w3)j9&e7(h4ju6jmp-qv2+3617ql
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["127.0.0.1", ".vercel.app", ".now.sh"]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
@@ -136,7 +136,7 @@ TEMPLATES = [
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 SITE_ID = 1
 
-WSGI_APPLICATION = 'django_project.wsgi.application'
+WSGI_APPLICATION = 'django_project.wsgi.app'
 
 
 # Database
@@ -196,7 +196,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
+
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
